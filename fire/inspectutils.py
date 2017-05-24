@@ -192,7 +192,7 @@ def _InfoBackup(component):
   info['docstring'] = inspect.getdoc(component)
 
   try:
-    info['length'] = len(component)
+    info['length'] = str(len(component))
   except (TypeError, AttributeError):
     pass
 
